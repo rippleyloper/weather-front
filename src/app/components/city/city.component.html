@@ -1,0 +1,12 @@
+<div class="card" *ngFor="let city of ciudadSrv" style="width: 18rem;">
+ 
+       <div class="card-body">
+        <h5 class="card-title">Ciudad: {{city.name}}   </h5>
+        <p class="card-text">Latitud: {{city.coord.lat}} <strong>({{city.sys.country}})</strong></p>
+        <p class="card-text">Longitud: {{city.coord.lon}}</p>
+        <p class="card-text">Temperatura: {{(city.main.temp- 273.15)|number}}°</p> 
+
+            
+         <br>
+       </div>
+     </div>
